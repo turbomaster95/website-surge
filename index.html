@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+  <style type="text/css">
+        html { 
+                height: 100%;
+        }
+        body { background: rgb(218,173,0); background: linear-gradient(135deg, rgba(218,173,0,1) 0%, rgba(241,242,189,1) 35%, rgba(163,144,35,1) 100%); }
+        .container {
+                display: flex;
+                gap: 20px
+        }
+        .myButton {
+                width: 300px;
+                height: 200px;
+                background-color: orange;
+
+        }
+  </style>
+  <script>
+   function myFunction() {
+     var correct = 69420
+     var passw = prompt("Enter access code:");
+     if ( correct == passw ) {
+         alert("You have access!");
+         document.cookie = "login=true; expires=Fri, 18 Dec 2099 12:00:0>
+         var messageBoxElement = document.querySelector('#messageBox');
+         messageBoxElement.style.display = "block";
+         var clickbuttonElement = document.querySelector('#clickMe');
+         clickbuttonElement.style.display = "none";
+     } else {
+         alert("Wrong. Please Try again");
+     }
+     if (document.cookie == "login=true") {
+      var messageBoxElement = document.querySelector('#messageBox');
+      messageBoxElement.style.display = "block";
+      var clickbuttonElement = document.querySelector('#clickMe');
+      clickbuttonElement.style.display = "none";
+     }
+    }
+  </script>
+  <title></title>
+</head>
+<body>
+  <button onclick="myFunction()" id="clickMe" class="myButton">Enter Unlock Code</button>
+  <div style="display: none;" id="messageBox">
+    <h1>VIP exclusive access</h1>
+    <p>Thanks for joining the Website</p>
+    <p>This is an access website for all games made by our
+    company.</p>
+    <div class="container">
+      
+    </div>
+  </div>
+</body>
+</html>
